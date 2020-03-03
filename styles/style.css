@@ -1,5 +1,7 @@
 img {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a img {
@@ -23,20 +25,119 @@ i {
   color: #a294c0;
 }
 
+.navbar {
+}
+
+footer p, footer h4{
+  color: rgb(197, 197, 197);
+}
+
+footer li a {
+  text-decoration: none;
+  width: 80%;
+}
+
+footer li a:hover {
+  text-decoration: underline;
+  color: rgb(197, 197, 197);
+}
+
+.card-flip img {
+  width: 400px;
+  display: block;
+}
+
 .carousel{
   width: 100%;
-  background-color: black;
+  height: 60vh;
+  background-color: khaki;
 }
 
-.carousel img {
+.carousel-cell{
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width:100%;
+    max-height:60vh;
+    transition: 1s;
+    position: absolute;
+}
+
+.carousel-cell img {
+  max-width:100%;
+  max-height: 60vh;
+}
+
+.pointer_center {
+  position: relative;
   width: 100%;
-  height: 500px;
-  object-fit: cover;
-  opacity: .7;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  top: 50px;
+  }
+
+.img_pointer {
+  position: relative;
+  height: 5px;
+  width: 40px;
+  background-color: red;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 900;
 }
 
-.navbar {
-  height: 60px;
+.position_middle {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 60vh;
+  color: red;
 }
 
+.slide_left {
+  position: absolute;
+  left: 30px;
+}
+
+.slide_right {
+  position: relative;
+  float: right;
+  right: 30px;
+
+}
+
+.slide_left, .slide_right {
+  display: inline-block;
+  font-size: 3em;
+  text-align: center;
+  line-height: 1.1em;
+  cursor: pointer;
+  color: #d9d9d9;
+  transition: .5s;
+  z-index: 900;
+}
+
+.slide_left:hover , .slide_right:hover {
+  color: #006bb3;
+  transition: .5s;
+}
+
+.container > img {
+  height: 80vh;
+}
+
+.container-n {
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
 

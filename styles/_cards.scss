@@ -1,3 +1,4 @@
+// --------------basic card--------------
 .card {
     position: relative;
     width: 90%;
@@ -25,5 +26,21 @@
     &:hover {
         border: 1px solid $dark-gray;
         color: $dark-gray;
+    }
+}
+
+// --------------card overlay--------------
+.card-back {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: gray;
+    &-center {
+        position: absolute;
+    }
+
+    & p, h4{
+        font-size: 1rem;
+        text-align: center;
     }
 }
